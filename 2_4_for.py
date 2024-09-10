@@ -2,20 +2,20 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []
 not_primes = []
 # is_prime = True
-for ind in range(len(numbers)):
-    if numbers[ind] == 1:
+for val in numbers:
+    if val == 1:
         continue
-    elif numbers[ind] == 2:
-        primes.append(numbers[ind])
+    elif val == 2:
+        primes.append(val)
 
     else:
-        for div in range(2, numbers[ind]):
+        for div in range(2, val):
             #print(div)
-            if numbers[ind] % div == 0:
-                 not_primes.append(numbers[ind])
+            if val % div == 0:
+                 not_primes.append(val)
                  break
         else:
-            primes.append(numbers[ind])
+            primes.append(val)
 
 
 
